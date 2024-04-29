@@ -4,7 +4,7 @@ import FiltroCard from '../../components/FiltroCard'
 import * as S from './styles'
 import * as enums from '../../utils/enums/Tarefa'
 import { RootReducer } from '../../store'
-import { alteraTermo } from '../../store/reducers/filtro'
+import { alterarTermo } from '../../store/reducers/filtro'
 
 const BarraLateral = () => {
   const dispatch = useDispatch()
@@ -16,7 +16,7 @@ const BarraLateral = () => {
           type="text"
           placeholder="Buscar"
           value={termo}
-          onChange={(evento) => dispatch(alteraTermo(evento.target.value))}
+          onChange={(evento) => dispatch(alterarTermo(evento.target.value))}
         />
         <S.Filtros>
           <FiltroCard

@@ -21,7 +21,7 @@ const FiltroCard = ({ legenda, criterio, valor }: Props) => {
     return mesmoCriterio && mesmoValor
   }
 
-  const contarTarefa = () => {
+  const contarTarefas = () => {
     if (criterio === 'todas') return tarefas.itens.length
     if (criterio === 'prioridade') {
       return tarefas.itens.filter((item) => item.prioridade === valor).length
@@ -40,7 +40,7 @@ const FiltroCard = ({ legenda, criterio, valor }: Props) => {
     )
   }
 
-  const contador = contarTarefa()
+  const contador = contarTarefas()
   const ativo = verificaEstaAtivo()
 
   return (
