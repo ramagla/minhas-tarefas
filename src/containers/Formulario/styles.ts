@@ -12,6 +12,7 @@ export const Form = styled.form`
     margin: 16px 0;
   }
 `
+
 export const Opcoes = styled.div`
   margin-bottom: 16px;
 
@@ -23,6 +24,7 @@ export const Opcoes = styled.div`
     margin-right: 6px;
   }
 `
+
 export const Opcao = styled.div`
   display: inline;
   text-transform: capitalize;
